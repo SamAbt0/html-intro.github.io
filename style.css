@@ -1,0 +1,101 @@
+:root {
+    --bar-height: 6vh;
+    --theme-color: rgb(44, 171, 255);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+header, footer {
+    width: 100vw;
+    height: var(--bar-height);
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+
+header a, footer a {
+    font-size: 22px;
+    margin: 0 15px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+header a:hover, footer a:hover {
+    color: var(--theme-color);
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+ol {
+    margin: 0;
+}
+
+.content {
+    margin-top: var(--bar-height);
+}
+
+#tags {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    height: 25vh;
+    width: 15vw;
+    background-color: rgb(43, 43, 43);
+    margin: 30px;
+    padding: 15px 15px 0 15px;
+    border-radius: 5px;
+}
+
+.card-title {
+    color: var(--theme-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content p {
+    margin-top: auto;
+    color: rgb(197, 197, 197);
+}
